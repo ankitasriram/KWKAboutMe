@@ -1,9 +1,79 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+          <span class="nav-logo">Ankita Sriram</span>
+          <button class="nav-toggle" onclick="toggleNav()">☰</button>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#favorites">Favorites</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#kwk">KWK</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    <h1>Hi! My name is Ankita Sriram</h1>
+
+    <h3 id="about">A bit about me...</h3>
+    <p>I'm a student at Purdue University studying Data Science. I enjoy using CS to help bring light to social issues
+        and create user focused solutions.
+        When I'm not coding, I love to sing, read, and watch kdramas. My favorite animal is a jellyfish and I love
+        listening to all kinds of music. I</p>
+
+    <h3 id="favorites">These are a few of my favorite things</h3>
+    <ul>
+        <li>Singing– I'm part of an <a href="https://www.instagram.com/purduetaal/">acapella team</a> at Purdue</li>
+        <li>My favorite animal is a jellyfish, I find them to be beautiful and peaceful creatures</li>
+        <li>I'm lowkey addicted to kdramas... Some of my favorites are <a href="https://www.netflix.com/watch/81751310?trackId=268410292&tctx=0%2C0%2C16df1125-9e1d-4c21-98f0-f91287625d1d-568056724%2C16df1125-9e1d-4c21-98f0-f91287625d1d-568056724%7C2%2C%2C%2C%2C%2C%2CVideo%3A81742615%2C">Weak Hero Class 1</a>, 
+            Twinkling Watermelon, and <a href ="https://www.netflix.com/watch/81406074?trackId=268410292&tctx=0%2C0%2C56df6709-e944-4bb7-a98e-2b5deed91a13-568746555%2C56df6709-e944-4bb7-a98e-2b5deed91a13-568746555%7C2%2Cunknown%2C%2C%2C%2C%2CVideo%3A81365087%2C">Vincenzo</a></li>
+        <li>I love any kind of beach or forest or city adventure, especially in good company.</li>
+    </ul>
+
+    <div class="gallery" id="gallery">
+        <div class="column">
+            <img src="images/beach2.JPG">
+            <img src="images/jelly3.jpg">
+            <img src="images/carmel.jpg">
+            
+        </div>
+        <div class="column">
+            <img src="images/nyc.JPG">
+            <img src="images/beach3.JPG">
+            <img src="images/thrift2.jpg">
+
+        </div>
+        <div class="column">
+            <img src="images/thrift.JPG">
+            <img src="images/ponyoposter.jpg">
+            <img src="images/nyc2.JPG">
+
+        </div>
+    </div>
+    <h3 id="kwk">My KWK journey</h3>
+    <p>I started KWK in 2020 with the Web Development camp, and have since completed the Data Science and the Mobile App
+        curriculums.
+        I've been an IA for the Data Science camp as well as a couple CODE-A-BRATIONS.
+        It's such a cool experience sharing the KWK magic with new scholars.
+        Currently, I'm a Data Science major, and I hope to continue creating and learning throughout college and beyond.
+    </p>
+    <script>
+        function toggleNav() {
+          document.getElementById("navLinks").classList.toggle("active");
+        }
+      </script>
+      
 
 </body>
+
 </html>
